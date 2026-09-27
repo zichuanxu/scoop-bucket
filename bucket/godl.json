@@ -1,0 +1,21 @@
+{
+    "version": "1.0.0",
+    "description": "Fast, cross-platform download manager: command-line client and service.",
+    "homepage": "https://github.com/zichuanxu/godl",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zichuanxu/godl/releases/download/v1.0.0/godl_1.0.0_windows_amd64.zip",
+            "hash": "a719617767ac651a3c4a26d96e4f306e6115a5ef2f891cfa2074f39cfc502214"
+        }
+    },
+    "bin": "godl.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zichuanxu/godl/releases/download/v$version/godl_$version_windows_amd64.zip"
+            }
+        }
+    }
+}

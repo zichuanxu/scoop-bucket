@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "description": "Fast download manager with a tray app (desktop edition of godl).",
+    "homepage": "https://github.com/zichuanxu/godl",
+    "license": "Apache-2.0",
+    "notes": "godl is unsigned; if SmartScreen warns, choose More info > Run anyway.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zichuanxu/godl/releases/download/v1.0.0/godl-desktop_1.0.0_windows_amd64.zip",
+            "hash": "5d2b37e1b9d1fd3e518db0630479fc3813e58426845a75cf1a062f374c3a30ae"
+        }
+    },
+    "shortcuts": [["godl.exe", "godl"]],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zichuanxu/godl/releases/download/v$version/godl-desktop_$version_windows_amd64.zip"
+            }
+        }
+    }
+}
