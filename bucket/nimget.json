@@ -1,0 +1,21 @@
+{
+    "version": "1.0.1",
+    "description": "Fast, cross-platform download manager: command-line client and service.",
+    "homepage": "https://github.com/zichuanxu/nimget",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zichuanxu/nimget/releases/download/v1.0.1/nimget_1.0.1_windows_amd64.zip",
+            "hash": "8632d9664bc1fe4f60fb1e559485a515fcd1bf38e601368fe9d942e25dab4cab"
+        }
+    },
+    "bin": "nimget.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zichuanxu/nimget/releases/download/v$version/nimget_$version_windows_amd64.zip"
+            }
+        }
+    }
+}

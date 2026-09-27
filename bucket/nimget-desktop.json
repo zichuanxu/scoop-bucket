@@ -1,0 +1,22 @@
+{
+    "version": "1.0.1",
+    "description": "NimGet: a fast desktop download manager built in Go.",
+    "homepage": "https://github.com/zichuanxu/nimget",
+    "license": "Apache-2.0",
+    "notes": "NimGet is unsigned; if SmartScreen warns, choose More info > Run anyway.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zichuanxu/nimget/releases/download/v1.0.1/nimget-desktop_1.0.1_windows_amd64.zip",
+            "hash": "de9e2c6985638670a303b1e3572e1118fc4633a65c8ead062a5742711e6f240b"
+        }
+    },
+    "shortcuts": [["nimget.exe", "NimGet"]],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zichuanxu/nimget/releases/download/v$version/nimget-desktop_$version_windows_amd64.zip"
+            }
+        }
+    }
+}
